@@ -1,0 +1,52 @@
+.caticon img {
+    height: 100px;
+    width: auto;
+    max-width: 100%;
+ 
+}
+
+
+.bwimg {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.bwimg:hover {
+    filter: grayscale(0%);
+}
+
+.navhr1, .navhr2, .navhr3 {
+    display: block;
+    width: 95%;
+    margin: auto; 
+}
+
+.navhr1 {
+    height: 8px;
+    background-color: black;
+    margin-top: 3.5px;
+    margin-bottom: 3.5px;
+}
+
+.navhr2 {
+    height: 2px;
+    background-color: black;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.navhr3 {
+    height: 4px;
+    background-color: black;
+    margin-top: 4.5px;
+    margin-bottom: 4.5px;
+}
+
+nav a{
+    margin: 0;
+    padding: 0;
+}
+
+.linkingme a{
+    color: black;
+}

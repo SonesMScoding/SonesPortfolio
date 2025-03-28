@@ -1,0 +1,29 @@
+.mainhr1 {
+    display: block;
+    width: 80%;
+    height: .5px;
+    background-color: black;
+    margin: 0;
+
+}
+
+@media (min-width: 768px) {
+    .Detroix {
+        border-right: 1px solid black;
+    }
+
+    .Wild {
+        border-left: 1px solid black;
+    }
+}
+
+.project img{
+    border: 2px solid black;
+    padding: 5px;
+    
+}
+
+.project h2{
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
