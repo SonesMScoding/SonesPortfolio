@@ -1,24 +1,32 @@
-.caticon img {
+body {
+    background-color: rgb(218, 218, 232) !important; 
+}
+
+.caticon {
     height: 100px;
     width: auto;
     max-width: 100%;
- 
+    position: relative;
+    z-index: 10;
+    margin-top: 40px;
 }
 
+header {
+    margin-top: 20px; 
+}
 
 .bwimg {
     filter: grayscale(100%);
-    transition: filter 0.3s ease;
+    transition: filter 0.3s ease, transform 0.3s ease; 
 }
 
 .bwimg:hover {
     filter: grayscale(0%);
+    transform: scale(1.05); 
 }
 
 .navhr1, .navhr2, .navhr3 {
     display: block;
-    width: 95%;
-    margin: auto; 
 }
 
 .navhr1 {
@@ -42,11 +50,58 @@
     margin-bottom: 4.5px;
 }
 
-nav a{
-    margin: 0;
+nav a {
+    margin: 0 10px; 
     padding: 0;
+    text-align: center;
+    font-family: "Bodoni Moda SC", serif;
+    font-size: 1.5rem; /* Increase font size */
+    font-weight: 900;
+    font-style: italic;
+
 }
 
-.linkingme a{
+nav .d-flex {
+    gap: 15px; 
+}
+
+.linkingme a {
     color: black;
+}
+
+@media (max-width: 765px) {
+    .caticon {
+        margin-top: 10px;
+        height: 80px; 
+    }
+
+    header {
+        margin-top: 60px;
+    }
+
+    nav .row {
+        flex-direction: column;
+        margin-left: 0px;
+    }
+
+    nav .col-12 {
+        margin-bottom: 20px; 
+    }
+
+    nav a {
+        margin: 10px 0; 
+    }
+
+    nav a{
+        margin: 0 40px; 
+    }
+
+    .links {
+        justify-content: center; 
+        text-align: center; 
+    }
+
+    nav .d-flex {
+        gap: 20px; 
+    }
 }

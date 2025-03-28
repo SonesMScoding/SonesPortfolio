@@ -3,7 +3,6 @@
     width: 80%;
     height: .5px;
     background-color: black;
-    margin: 0;
 
 }
 
@@ -19,7 +18,9 @@
 
 .project img{
     border: 2px solid black;
-    padding: 5px;
+    padding: 7px;
+    height: 200px; 
+    object-fit: cover;
     
 }
 
