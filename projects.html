@@ -12,7 +12,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -20,82 +20,81 @@
 </head>
 <body>
     <header role="banner" class="position-relative">
-        <span class="navhr1 d-block ml-4 mr-4"></span>
-        <span class="navhr2 d-block ml-4 mr-4"></span>
+        <span class="navhr1 d-block mx-auto"></span>
+        <span class="navhr2 d-block mx-auto"></span>
         <div class="text-center position-absolute w-100" style="top: -50px; z-index: 10;">
             <a href="catgallery">
                 <img class="bwimg caticon" src="./static/caticons.png" alt="Two cats icons">
             </a>
         </div>
-        <nav role="navigation" class="navbar navbar-expand-lg w-100 mx-auto">
+        <nav role="navigation" class="navbar navbar-expand-lg w-100">
             <div class="container links">
                 <div class="row w-100 text-center">
                     <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-start">
                         <a class="nav-link text-decoration-none" href="home.html">HOME</a>
                         <a class="nav-link text-decoration-none" href="projects.html">PROJECTS</a>
                     </div>
-                    <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end ">
+                    <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end">
                         <a class="nav-link text-decoration-none" href="wip.html">IN PROGRESS</a>
                         <a class="nav-link text-decoration-none" href="aboutme.html">ABOUT ME</a>
                     </div>
                 </div>
             </div>
         </nav>
-        <span class="navhr2 d-block ml-4 mr-4"></span>
-        <span class="navhr3 d-block ml-4 mr-4"></span>
+        <span class="navhr2 d-block mx-auto"></span>
+        <span class="navhr3 d-block mx-auto"></span>
     </header>
 
-    <main role="main">
-        <div class="d-flex align-items-center justify-content-between mt-4 mb-2 flex-wrap">
-            <h1 class="ml-4 ">A Few Projects</h1>
-            <div class="text-end linkingme mr-4">
-                <span class="emailbox p-2 border mx-2">
-                    <a href="mailto:ev.sones02@gmail.com" target="_blank">ev.sones02@gmail.com</a>
-                </span>
-                <span class="githubbox p-2 border mx-2">
-                    <a href="" target="_blank"><i class="fa fa-github"></i></a>
-                </span>
-                <span class="linkedinbox p-2 border mx-2">
-                    <a href="" target="_blank"><i class="fa fa-linkedin-square"></i></a>
-                </span>
+    <main role="main" >
+        <div class="d-flex mt-4 mb-2 mx-4 flex-wrap align-items-center">
+            <div class="text-center linkingme0 mx-auto d-flex d-md-none">
+                <a href="https://www.linkedin.com/in/lillian-eve-sones-/" target="_blank" class="linkedinbox shape"><i class="fa fa-linkedin-square"></i></a>
+                <a href="mailto:ev.sones02@gmail.com" target="_blank" class="emailbox shape">ev.sones02@gmail.com</a>
+                <a href="https://github.com/SonesMScoding" target="_blank" class="githubbox shape"><i class="fa fa-github"></i></a>
+            </div>
+            <h1 class="mx-auto flavor-header">A Few Projects</h1>
+            <div class="text-center linkingme mx-auto d-none d-md-flex">
+                <a href="https://www.linkedin.com/in/lillian-eve-sones-/" target="_blank" class="linkedinbox shape"><i class="fa fa-linkedin-square"></i></a>
+                <a href="mailto:ev.sones02@gmail.com" target="_blank" class="emailbox shape">ev.sones02@gmail.com</a>
+                <a href="https://github.com/SonesMScoding" target="_blank" class="githubbox shape"><i class="fa fa-github"></i></a>
             </div>
         </div>
-        <span class="mainhr1 d-block ml-4"></span>
+        <span class="mainhr1 d-block mx-auto"></span>
 
-        <p class="ml-4 m-2 mb-5 col-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam velit incidunt rem amet suscipit? Vero temporibus quasi suscipit, optio numquam rerum impedit ex sequi! Cum dignissimos cumque itaque error corrupti.</p>
+        <p class="mx-auto m-2 mb-5 col-9 flavor-text">The projects below are some of my most recent and noteworthy finished products. They will change as I complete the projects currently in progress, but I implore you to visit the ones I have available. These projects often showcase my diverse skill set and enthusiasm for learning new things. </p>
 
-        <span class="navhr2 d-block ml-4 mr-4"></span>
-        <span class="navhr3 d-block ml-4 mr-4"></span>
+        <span class="navhr2 d-block mx-auto"></span>
+        <span class="navhr3 d-block mx-auto"></span>
 
         <section class="projects m-3 mt-5">
             <div class="row justify-content-center mx-2">
-                <article class="project Detroix col-md-4 text-center mb-4 d-flex flex-column">
-                    <div class="container d-flex flex-column h-100">
-                        <h2>Detroix Demo Using Bootstrap</h2>
+                <article class="project Detroix col-md-4 text-center mb-4 d-flex flex-column align-items-center">
+                    <div class="container d-flex flex-column">
+                        <h2 class="project-title">Detroix Demo Using Bootstrap</h2>
                         <a href="https://sonesmscoding.github.io/DetroixDemo-Bootstrap/" target="_blank" class="mt-auto">
                             <img src="./static/projects/Detroix.png" alt="Detroix Demo" class="project-img bwimg img-fluid">
                         </a>
-                        <p class="mt-2">Description of Project 1.</p>
+                        <p class="mt-2">Wrapping up HTML+Bootstrap with Mississippi Coding Academy, I set out to make a one-to-one template design. Detroix Bootstrap Demo is a project I worked on during my time there that established key functions of styling a web page with<span class="highlighttext"> Bootstrap and CSS.</span></p>
                     </div>
                 </article>
 
-                <article class="project Invest col-md-4 text-center mb-4 d-flex flex-column">
-                    <div class="container d-flex flex-column h-100">
-                        <h2>Investment Python Program</h2>
+                <article class="project Invest col-md-4 text-center mb-4 d-flex flex-column align-items-center">
+                    <div class="container d-flex flex-column">
+                        <h2 class="project-title">Investment Python Program</h2>
                         <a href="https://github.com/SonesMScoding/Python_22-23/blob/main/Python-I/investment.py" target="_blank" class="mt-auto">
                             <img src="./static/projects/python.png" alt="Placeholder Code image" class="project-img bwimg img-fluid">
                         </a>
-                        <p class="mt-2">Description of Project 2.</p>
+                        <p class="mt-2">Going back to some fundamental <span class="highlighttext">object oriented programming with Python,</span> I revisited work I did during my courses at PRCC. This Program takes input to total a ROI.</p>
                     </div>
                 </article>
 
-                <article class="project Wild col-md-4 text-center mb-4 d-flex flex-column">
-                    <div class="container d-flex flex-column h-100 ">
-                        <h2 class="mt-auto">Wild Rescues</h2>
+                <article class="project Wild col-md-4 text-center mb-4 d-flex flex-column align-items-center">
+                    <div class="container d-flex flex-column">
+                        <h2 class="project-title">Wild Rescues Multi-Page Site</h2>
                         <a href="https://github.com/SonesMScoding/WildRescues" target="_blank" class="mt-auto">
                             <img src="./static/projects/WildRescues.png" alt="Wild Rescues Homepage" class="project-img bwimg img-fluid">
                         </a>
-                        <p class="mt-2">Description of Project 2.</p>
+                        <p class="mt-2">This is my very first project utilizing a <span class="highlighttext">JavaScript form, Bootstrap, and CSS</span> to make a multi-page website.</p>
                     </div>
                 </article>
             </div>

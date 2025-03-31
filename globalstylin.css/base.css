@@ -1,107 +1,295 @@
+/* This base CSS is for the fonts, linking my socials (linkingme0 and linkingme), site-wide image styling, the nav bar and media querys for these properties. */
+
+/* --------------------------------------------- */
+
 body {
-    background-color: rgb(218, 218, 232) !important; 
+    background-color: #d0d0db !important;
+    font-size: 16px;
+    color: #1c1515 !important;
 }
 
-.caticon {
-    height: 100px;
-    width: auto;
-    max-width: 100%;
-    position: relative;
-    z-index: 10;
-    margin-top: 40px;
-}
-
-header {
-    margin-top: 20px; 
-}
-
+/* black and white images */
 .bwimg {
     filter: grayscale(100%);
-    transition: filter 0.3s ease, transform 0.3s ease; 
+    transition: filter 0.3s ease, transform 0.3s ease;
 }
 
 .bwimg:hover {
     filter: grayscale(0%);
-    transform: scale(1.05); 
+    transform: scale(1.05);
 }
+
+/* special blue text */
+.highlighttext {
+    color: rgb(37, 37, 163) !important;
+}
+
+/* setting site-wide fonts and sizing */
+h1, h2 {
+    font-family: "Libre Bodoni", serif;
+    font-weight: medium;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* --------------------------------------------- */
+
+/* Nav */
+
+header {
+    margin-top: 2vw;
+}
+nav {
+    position: relative;
+    z-index: 10; /* Ensure nav is above other elements */
+}
+
+.caticon {
+    height: 8vw;
+    width: auto;
+    max-width: 100%;
+    position: relative;
+    z-index: 1; /* Ensure the cat icon is below the nav */
+    margin-top: 5vw;
+}
+
+/* Special lines oooo */
 
 .navhr1, .navhr2, .navhr3 {
     display: block;
+    width: 95%;
+    margin: auto;
 }
 
 .navhr1 {
-    height: 8px;
+    height: 0.5rem;
     background-color: black;
-    margin-top: 3.5px;
-    margin-bottom: 3.5px;
+    margin: 0.5rem 0;
 }
 
 .navhr2 {
-    height: 2px;
+    height: 0.2rem;
     background-color: black;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .navhr3 {
-    height: 4px;
+    height: 0.3rem;
     background-color: black;
-    margin-top: 4.5px;
-    margin-bottom: 4.5px;
+    margin: 0.5rem 0;
 }
+/* End of special ooo lines */
 
+/* nav link base styling */
 nav a {
-    margin: 0 10px; 
-    padding: 0;
+    margin: 0 1rem;
+    padding: 0.5rem 0;
     text-align: center;
-    font-family: "Bodoni Moda SC", serif;
-    font-size: 1.5rem; /* Increase font size */
-    font-weight: 900;
+    font-family: "Libre Bodoni", serif;
+    font-size: 1.5rem !important;
+    font-weight: bolder !important;
     font-style: italic;
+}
+
+nav a:hover {
+    background-color: #adadb8 !important;
 
 }
 
-nav .d-flex {
-    gap: 15px; 
+/* End of base nav styling */
+
+/* --------------------------------------------- */
+
+/* Special social media boxes */
+
+.linkingme a, .linkingme0 a {
+    color: #1c1515;
 }
 
-.linkingme a {
-    color: black;
+.linkingme a:hover, .linkingme0 a:hover {
+    text-decoration: none !important;
+    color: #1c1515 !important;
 }
 
-@media (max-width: 765px) {
+.shape {
+    display: inline-flex;
+    padding: 6px;
+    background: white;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.emailbox {
+    width: 200px;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.githubbox, .linkedinbox {
+    width: 70px;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+}
+
+.githubbox {
+    margin-left: -19px;
+    margin-top: -10px;
+    transform: rotate(-5deg);
+}
+
+.linkedinbox {
+    transform: rotate(5deg);
+    margin-right: -19px;
+    margin-top: 19px;
+    z-index: 2;
+}
+
+.shape:hover {
+    background: #b9b9be;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+/* End of social media boxes */
+
+/* --------------------------------------------- */
+/* Media Queries */
+
+/* Mobile */
+@media (max-width: 767px) {
     .caticon {
-        margin-top: 10px;
-        height: 80px; 
+        margin-top: 1rem;
+        height: 23vw;
     }
 
     header {
-        margin-top: 60px;
+        margin-top: 3rem;
     }
 
     nav .row {
         flex-direction: column;
-        margin-left: 0px;
-    }
-
-    nav .col-12 {
-        margin-bottom: 20px; 
+        margin-left: 0;
+        margin-top: 2rem;
     }
 
     nav a {
-        margin: 10px 0; 
-    }
-
-    nav a{
-        margin: 0 40px; 
+        margin: 0.5rem 0;
+        font-size: 1rem !important;
     }
 
     .links {
-        justify-content: center; 
-        text-align: center; 
+        justify-content: center;
+        text-align: center;
     }
 
-    nav .d-flex {
-        gap: 20px; 
+    .navhr1, .navhr2, .navhr3 {
+        width: 90%;
+    }
+
+    .linkingme, .linkingme0 {
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 2rem auto;
+        order: -1;
+    }
+
+    .flavor-header {
+        margin-top: 1rem;
     }
 }
+
+/* Bigger than mobile hehe */
+@media (min-width: 768px) {
+    .flavor-header {
+        font-size: 2.9rem !important;
+        font-weight: bolder !important;
+    }
+
+    .flavor-text {
+        font-size: 1.25rem !important;
+    }
+
+    .linkingme {
+        justify-content: flex-end;
+        text-align: right;
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 0;
+        order: 0;
+    }
+}
+
+@media (min-width: 1207px) {
+    .caticon {
+        margin-top: 3rem;
+        height: 8vw;
+    }
+
+    nav a {
+        margin: 0.5rem 1rem;
+        font-size: 1.2rem;
+    }
+}
+
+/* End of good media queries */
+/* --------------------------------------------- */
+
+
+
+
+/* not so fun media queries */
+
+/* Special sizing for social media boxes for one specific range */
+@media (max-width: 353px) {
+    .linkingme0 .emailbox {
+        width: 150px;
+        height: 60px;
+        font-size: 10px;
+    }
+
+    .linkingme0 .githubbox, .linkingme0 .linkedinbox {
+        width: 50px;
+        height: 50px;
+        font-size: 40px;
+    }
+
+    .linkingme0 {
+        margin: 1.5rem auto;
+    }
+}
+
+/* Special cat settings for a specific ranges */
+@media (min-width: 470px) and (max-width: 767px) {
+    .caticon {
+        margin-top: 1rem;
+        height: 90px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1207px) {
+    nav a {
+        margin: 0.5rem 0.5rem;
+        font-size: 1rem !important;
+    }
+
+    .caticon {
+        margin-top: 3rem;
+        height: 110px;
+    }
+}
+
+/* --------------------------------------------- */
