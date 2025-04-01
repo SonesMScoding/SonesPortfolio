@@ -3,9 +3,9 @@
 /* --------------------------------------------- */
 
 body {
-    background-color: #d0d0db !important;
+    background-color: #f5f5f9 !important;
     font-size: 16px;
-    color: #1c1515 !important;
+    color: #1f1717 !important;
 }
 
 /* black and white images */
@@ -94,13 +94,16 @@ nav a {
     padding: 0.5rem 0;
     text-align: center;
     font-family: "Libre Bodoni", serif;
-    font-size: 1.5rem !important;
-    font-weight: bolder !important;
+    font-size: 1.5rem;
+    font-weight: bolder;
     font-style: italic;
+    color: #1f1717;
 }
 
 nav a:hover {
-    background-color: #adadb8 !important;
+    background-color: #adadb8 ;
+    color: #1f1717;
+    text-decoration: none;
 
 }
 
@@ -111,12 +114,12 @@ nav a:hover {
 /* Special social media boxes */
 
 .linkingme a, .linkingme0 a {
-    color: #1c1515;
+    color: #1f1717;
 }
 
 .linkingme a:hover, .linkingme0 a:hover {
     text-decoration: none !important;
-    color: #1c1515 !important;
+    color: #1f1717 !important;
 }
 
 .shape {
@@ -185,8 +188,7 @@ nav a:hover {
     }
 
     nav a {
-        margin: 0.5rem 0;
-        font-size: 1rem !important;
+        font-size: 1rem ;
     }
 
     .links {
@@ -240,7 +242,6 @@ nav a:hover {
     }
 
     nav a {
-        margin: 0.5rem 1rem;
         font-size: 1.2rem;
     }
 }
@@ -282,8 +283,7 @@ nav a:hover {
 
 @media (min-width: 768px) and (max-width: 1207px) {
     nav a {
-        margin: 0.5rem 0.5rem;
-        font-size: 1rem !important;
+        font-size: 1rem;
     }
 
     .caticon {
