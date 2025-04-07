@@ -14,16 +14,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
     <title>About Me</title>
 </head>
+
 <body>
     <header role="banner" class="position-relative">
         <span class="navhr1 d-block mx-auto"></span>
         <span class="navhr2 d-block mx-auto"></span>
-        <div class="text-center position-absolute w-100" style="top: -50px; z-index: 10;">
+        <div class="text-center position-absolute w-100 catnav-spot">
             <a href="catgallery">
                 <img class="bwimg caticon" src="./static/caticons.png" alt="Two cats icons">
             </a>
@@ -48,65 +47,117 @@
 
     <main role="main" >
 
-        <h2>MY RESUME</h2>
+    <div class="container col-12 my-5 ">
+        <div class="row">
+            <div class="resume-container text-center d-flex flex-column align-items-center col-md-5">
+                <div class="align-items-center text-center">
+                    <h2 class="font-italic pb-1">MY RESUME</h2>
+                    <!-- Resume Player -->
+                    <object
+                        data="./static/SonesResume.pdf"
+                        type="application/pdf"
+                        width="100%"
+                        height="500px"
+                        title="Sones Resume 2025"
+                    >
+                        <iframe
+                            src="./static/SonesResume.pdf"
+                            width="100%"
+                            height="500px"
+                            style="border: none"
+                            title="Fallback PDF Viewer for Sones Resume 2025"
+                        >
+                            <p>
+                                Your browser does not support PDFs.
+                                <a href="./static/SonesResume.pdf">Download the PDF</a>
+                            </p>
+                        </iframe>
+                    </object>
+                    <!-- Resume Player END -->
+                </div>
+                <p class="font-italic">March 2025</p>
+            </div>
 
-        <object
-	data="./static/SonesResume.pdf"
-	type="application/pdf"
-	width="auto"
-	height="250%"
-	title="Sones Resume 2025"
->
-	<iframe
-		src="./static/SonesResume.pdf"
-		width="auto"
-		height="150%"
-		style="border: none"
-		title="Fallback PDF Viewer for Sones Resume 2025"
-	>
-		<p>
-			Your browser does not support PDFs.
-			<a href="./static/SonesResume.pdf">Download the PDF</a>
-		</p>
-	</iframe>
-</object>
+            <div class="col-md-6 d-flex flex-column align-items-center justify-content-center">
+                <div class="flavor-text text-center mb-5">
+                    <h2>I LOVE to learn!!</h2>
+                    <p>If I could, I would go to school instead of work. I would love an opportuntity to teach because the best way to learn is to teach.</p>
+                </div>
 
-<p>March 2025</p>
-
-<h2>I LOVE to learn!!</h2>
-<p>If I could, I would go to school instead of work. I would love an opportuntity to teach because the best way to learn is to teach. Even while wrapping up two forms of higher education, I am thinking about the next three semesters I want to take (probably automotive technology).</p>
-
-
-
-<h2 class="mx-auto">Areas of Proficiency</h2>
-
-<h3>OOP LANGUAGES</h3>
-<p>A lot of my early courses when I started my path to software development focused on object oriented programming with C++, Java, and Python primarly. The logical algorithms are interesting to work out and translate into OOP languages. I often think about different technologies' program that makes them do what they do from Roombas to tractors.</p>
-
-<h3>WEB DEVELOPMENT</h3>
-<p>I have worked with Django, Springboot, and will very shortly be using React to develop web applications. My future goals are to master and hone these skills, as I really enjoyed working with Django during my time with PRCC. I enjoy both front-end and back-end development, but I love making a database and implementing it into applications. </p>
-
-<h3>BUSINESS ORG ACCOUNTING</h3>
-<p>The latter part of my higher education taught me a lot about key accounting terminology and norms as well as training, evalutation, team, and technology strategies used alongside conceptual understandings of the typical business organization. While project manager isn't my dream job, my family claims I am a master delegator and I could excel in a position as such.</p>
-
-<section class="polygons-section text-center my-5">
-    <h2 class="mb-4">Explore More</h2>
-    <div class="d-flex justify-content-center flex-wrap gap-3">
-        <a href="https://example1.com" target="_blank" class="polygon-link">
-            <div class="polygon PRCC" style="background-image: url('./static/aboutmestatic/PRCC.png');"></div>
-        </a>
-        <a href="https://example2.com" target="_blank" class="polygon-link">
-            <div class="polygon USM" style="background-image: url('./static/aboutmestatic/USM.png');"></div>
-        </a>
-        <a href="https://example3.com" target="_blank" class="polygon-link">
-            <div class="polygon MCA" style="background-image: url('./static/aboutmestatic/MCA.png');"></div>
-        </a>
+                <!-- Polygon Start -->
+                <section class="polygons-section mb-5 text-center">
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <a href="https://prcc.edu/academics/career-technical-education/stem/coding-technology/" target="_blank" class="polygon-link">
+                            <div class="polygon PRCC" style="background-image: url('./static/aboutmestatic/PRCC.png');"></div>
+                        </a>
+                        <a href="https://www.usm.edu/undergraduate-programs/applied-technology.php" target="_blank" class="polygon-link">
+                            <div class="polygon USM" style="background-image: url('./static/aboutmestatic/USM.png');"></div>
+                        </a>
+                        <a href="https://mscoding.org/" target="_blank" class="polygon-link">
+                            <div class="polygon MCA" style="background-image: url('./static/aboutmestatic/MCA.png');"></div>
+                        </a>
+                    </div>
+                </section>
+                <!-- Polygon END -->
+            </div>
+        </div>
     </div>
-</section>
 
-<span class="mainhr1 d-block mx-auto"></span>
-        <span class="navhr2 d-block mx-auto"></span>
-        <span class="navhr3 d-block mx-auto"></span>
-</main>
+    <div class="container skills-container mt-5 mb-5">
+        <h2>Areas of Proficiency</h2>
+        <div class="row justify-content-center text-center my-4">
+            <div class="col-md-4 d-flex flex-column align-items-center oop-skill">
+                <h3 class="mb-3">OOP LANGUAGES</h3>
+                <p class="text-justify">A lot of my early courses when I started my path to software development focused on object oriented programming with C++, Java, and Python primarly. The logical algorithms are interesting to work out and translate into OOP languages. I often think about different technologies' program that makes them do what they do from Roombas to tractors.</p>
+            </div>
+            <div class="col-md-4 d-flex flex-column align-items-center web-dev-skill">
+                <h3 class="mb-3">WEB DEVELOPMENT</h3>
+                <p class="text-justify">I have worked with Django, Springboot, and will very shortly be using React to develop web applications. My future goals are to master and hone these skills, as I really enjoyed working with Django during my time with PRCC. I enjoy both front-end and back-end development, but I love making a database and implementing it into applications.</p>
+            </div>
+            <div class="col-md-4 d-flex flex-column align-items-center business-org-skill">
+                <h3 class="mb-3">BUSINESS ORG</h3>
+                <p class="text-justify">The latter part of my higher education taught me a lot about key accounting terminology and norms as well as training, evalutation, team, and technology strategies used alongside conceptual understandings of the typical business organization. While project manager isn't my dream job, my family claims I am a master delegator and I could excel in a position as such.</p>
+            </div>
+        </div>
+    </div>
+
+    <span class="navhr2 d-block mx-auto"></span>
+    <span class="navhr3 d-block mx-auto"></span>
+    <div class="d-flex flex-column justify-content-center align-items-center my-2">
+    <span class="lillian">Lillian</span>
+    <span class="everett">EVERETT SONES</span>
+    </div>
+    <span class="navhr2 d-block mx-auto"></span>
+    <span class="navhr3 d-block mx-auto"></span>
+
+    <div class="row m-4 abtme">
+        <div class="col-lg-4 d-flex flex-column align-items-center">
+            <h2 class="mb-3 font-italic">FUN FACTS</h2>
+            <ul class="mb-4" style="text-align: justify;">
+                <li>I love learning new things about automotive technology</li>
+                <li>My favorite color is maroon, but my second favorite would be a dark green</li>
+                <li>One day I hope to grow my own food and keep chickens to have a little farm similiar to my upbringing</li>
+                <li>You can always find multiple bags of edamame in my freezer</li>
+            </ul>
+        </div>
+
+        <div class="col-lg-4 d-flex flex-column align-items-center mb-4">
+            <img src="./static/aboutmestatic/aboutme.jpg" alt="A picture of Everett in front of a field and brick oven" class="aboutmeimg bwimg">
+        </div>
+
+        <div class="col-lg-4 d-flex flex-column align-items-center">
+            <img src="./static/aboutmestatic/catdrawing.jpg" alt="A pen drawing of a wizard cat with a pipe" class="d-none d-lg-flex catdrawing bwimg my-3">
+
+            <h2 class="mb-3 font-italic hobbies">MY HOBBIES</h2>
+            <p class="text-center">In my free time, I love to draw and paint. Expressing myself artistically is imperitive to my well being so I also like to play violin, piano, and I am learning guitar. When I am not spending free time to create, I love to go dancing, shoot pool, or read.</p>
+
+            <img src="./static/aboutmestatic/catdrawing.jpg" alt="A pen drawing of a wizard cat with a pipe" class=" d-flex d-lg-none catdrawing bwimg my-3">
+        </div>
+    </div>
+
+    <span class="navhr1 d-block mx-auto"></span>
+    <span class="navhr2 d-block mx-auto mb-4"></span>
+    </main>
+</div>
 </body>
 </html>

@@ -1,3 +1,23 @@
+.resume-container h2, .flavor-text h2,  .skills-container h2, .abtme h2{
+    border-bottom: 2px solid black;
+}
+
+.flavor-text{
+    height: fit-content;
+    background-color: #b9b9be;
+    border: 2px dashed black;
+    padding: 2%; 
+}
+
+/* Polygon Stylin */
+.polygons-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+
 .polygons-section .polygon-link {
     text-decoration: none;
     position: relative;
@@ -6,8 +26,20 @@
 }
 
 
-
-.polygons-section .polygon::before {
+.polygons-section .polygon {
+    width: 125px;
+    height: 175px;
+    clip-path: polygon(0 0, 100% 0%, 100% 77%, 50% 100%, 0 77%);
+    background-size: cover;
+    background-position: center;
+    background-color: #ffffff;
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 1;
+    overflow: hidden; 
+}
+/* I tried to make a border/background for the polygon shapes with the images. There is an issue where there show on top of my desired polygons. */
+/* .polygons-section .polygon::before {
     content: '';
     position: absolute;
     top: 0;
@@ -19,24 +51,17 @@
     z-index: -1; 
     transform: scale(1.1); 
     transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.polygons-section .polygon {
-    width: 150px;
-    height: 150px;
-    clip-path: polygon(0 0, 100% 0%, 100% 77%, 50% 100%, 0 77%);
-    background-size: cover;
-    background-position: center;
-    background-color: #ffffff;
-    transition: transform 0.3s ease;
-    position: relative;
-    z-index: 1; /* Ensure the polygon is above the pseudo-element */
-    overflow: hidden; 
-}
+} */
 
 .polygons-section .polygon.USM,
 .polygons-section .polygon.MCA {
     background-size: 85%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.polygons-section .polygon.PRCC {
+    background-size: 90%;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -59,5 +84,41 @@
 
 .polygons-section .polygon.MCA:hover::before {
     background-color: #346da5; /* Blue for MCA */
+}
+
+/* END polygon stylin */
+/* --------------------------------------- */
+
+.aboutmeimg, .catdrawing{
+    border: 2px solid black;
+    padding: 7px;
+}
+
+.aboutmeimg {
+    width: 100%;
+    max-width: 350px; 
+    height: auto; 
+}
+
+.catdrawing {
+    width: 100%;
+    max-width: 250px; 
+    height: auto; 
+}
+
+@media (max-width: 768px) {
+    .skills-container h2 {
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .skills-container .oop-skill {
+        border-right: 2px solid black; 
+    }
+
+    .skills-container .business-org-skill {
+        border-left: 2px solid black; 
+    }
 }
 

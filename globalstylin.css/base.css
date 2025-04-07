@@ -8,6 +8,19 @@ body {
     color: #1f1717 !important;
 }
 
+.lillian{
+font-family: "UnifrakturMaguntia", cursive;
+font-size: 3rem;
+}
+
+.everett{
+    font-family: "Libre Bodoni", serif;
+    font-size: 6rem;
+    text-align: center;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+}
+
 /* black and white images */
 .bwimg {
     filter: grayscale(100%);
@@ -32,7 +45,7 @@ h1, h2 {
     font-size: 2rem;
 }
 
-p {
+p, ul li {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -49,15 +62,18 @@ header {
 }
 nav {
     position: relative;
-    z-index: 10; /* Ensure nav is above other elements */
+    z-index: 10; 
 }
 
+.catnav-spot{
+    top: -50px; 
+    z-index: 10;
+}
 .caticon {
     height: 8vw;
     width: auto;
     max-width: 100%;
     position: relative;
-    z-index: 1; /* Ensure the cat icon is below the nav */
     margin-top: 5vw;
 }
 
@@ -211,6 +227,13 @@ nav a:hover {
 
     .flavor-header {
         margin-top: 1rem;
+    }
+
+    .everett {
+        font-size: 4rem;
+        text-align: center;
+        letter-spacing: 0;
+        font-weight: 600;
     }
 }
 
