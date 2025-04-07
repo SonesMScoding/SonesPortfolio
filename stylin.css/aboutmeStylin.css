@@ -1,0 +1,63 @@
+.polygons-section .polygon-link {
+    text-decoration: none;
+    position: relative;
+    z-index: 1; 
+    display: inline-block; 
+}
+
+
+
+.polygons-section .polygon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: inherit; 
+    background-color: #000; 
+    z-index: -1; 
+    transform: scale(1.1); 
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.polygons-section .polygon {
+    width: 150px;
+    height: 150px;
+    clip-path: polygon(0 0, 100% 0%, 100% 77%, 50% 100%, 0 77%);
+    background-size: cover;
+    background-position: center;
+    background-color: #ffffff;
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 1; /* Ensure the polygon is above the pseudo-element */
+    overflow: hidden; 
+}
+
+.polygons-section .polygon.USM,
+.polygons-section .polygon.MCA {
+    background-size: 85%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.polygons-section .polygon:hover {
+    transform: scale(1.1);
+}
+
+.polygons-section .polygon:hover::before {
+    transform: scale(1.2); 
+}
+
+.polygons-section .polygon.PRCC:hover::before {
+    background-color: #a01818; /* Red for PRCC */
+}
+
+.polygons-section .polygon.USM:hover::before {
+    background-color: #efa927; /* Yellow for USM */
+}
+
+.polygons-section .polygon.MCA:hover::before {
+    background-color: #346da5; /* Blue for MCA */
+}
+

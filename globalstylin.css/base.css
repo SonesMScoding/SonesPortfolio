@@ -147,14 +147,14 @@ nav a:hover {
 }
 
 .githubbox {
-    margin-left: -19px;
+    margin-left: -19px; /* Make it overlap the box */
     margin-top: -10px;
     transform: rotate(-5deg);
 }
 
 .linkedinbox {
     transform: rotate(5deg);
-    margin-right: -19px;
+    margin-right: -19px; /* Make it overlap the box */
     margin-top: 19px;
     z-index: 2;
 }
