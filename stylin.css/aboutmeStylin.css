@@ -21,12 +21,12 @@
 .polygons-section .polygon-link {
     text-decoration: none;
     position: relative;
-    z-index: 1; 
     display: inline-block; 
 }
 
-
 .polygons-section .polygon {
+    position: relative;
+    z-index: 2; /* Ensure the polygon is above the background */
     width: 125px;
     height: 175px;
     clip-path: polygon(0 0, 100% 0%, 100% 77%, 50% 100%, 0 77%);
@@ -34,24 +34,20 @@
     background-position: center;
     background-color: #ffffff;
     transition: transform 0.3s ease;
-    position: relative;
-    z-index: 1;
-    overflow: hidden; 
+    overflow: hidden;
 }
-/* I tried to make a border/background for the polygon shapes with the images. There is an issue where there show on top of my desired polygons. */
-/* .polygons-section .polygon::before {
-    content: '';
+
+.polygons-section .polygon-background {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    clip-path: inherit; 
-    background-color: #000; 
-    z-index: -1; 
-    transform: scale(1.1); 
+    top: -5px; 
+    left: -5px;
+    z-index: 0; 
+    width: 135px; 
+    height: 185px; 
+    clip-path: polygon(0 0, 100% 0%, 100% 77%, 50% 100%, 0 77%);
+    background-color: #000000;
     transition: background-color 0.3s ease, transform 0.3s ease;
-} */
+}
 
 .polygons-section .polygon.USM,
 .polygons-section .polygon.MCA {
@@ -66,24 +62,24 @@
     background-position: center;
 }
 
-.polygons-section .polygon:hover {
-    transform: scale(1.1);
-}
-
-.polygons-section .polygon:hover::before {
-    transform: scale(1.2); 
-}
-
-.polygons-section .polygon.PRCC:hover::before {
-    background-color: #a01818; /* Red for PRCC */
-}
-
-.polygons-section .polygon.USM:hover::before {
+.polygons-section .polygon.USM:hover .polygon-background {
     background-color: #efa927; /* Yellow for USM */
 }
 
-.polygons-section .polygon.MCA:hover::before {
+.polygons-section .polygon.MCA:hover .polygon-background {
     background-color: #346da5; /* Blue for MCA */
+}
+
+.polygons-section .polygon.PRCC:hover .polygon-background {
+    background-color: #a01818; /* Red for PRCC */
+}
+
+.polygons-section .polygon-background:hover {
+    transform: scale(1.1);
+}
+
+.polygons-section .polygon:hover {
+    transform: scale(1.1);
 }
 
 /* END polygon stylin */
