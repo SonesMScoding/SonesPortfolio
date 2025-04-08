@@ -102,6 +102,13 @@ nav {
     background-color: black;
     margin: 0.5rem 0;
 }
+
+.mainhr1 {
+    display: block;
+    width: 80%;
+    height: .5px;
+    background-color: black;
+}
 /* End of special ooo lines */
 
 /* nav link base styling */

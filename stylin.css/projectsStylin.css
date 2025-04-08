@@ -1,8 +1,12 @@
-.mainhr1 {
-    display: block;
-    width: 80%;
-    height: .5px;
-    background-color: black;
+.project img {
+    border: 2px solid black;
+    padding: 7px;
+    object-fit: cover;
+}
+
+.project h2 {
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
 }
 
 @media (min-width: 768px) {
@@ -15,13 +19,3 @@
     }
 }
 
-.project img {
-    border: 2px solid black;
-    padding: 7px;
-    object-fit: cover;
-}
-
-.project h2 {
-    border-bottom: 1px solid black;
-    padding-bottom: 5px;
-}

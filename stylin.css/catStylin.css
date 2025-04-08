@@ -1,0 +1,89 @@
+.cat-header{
+    font-size: 3rem;
+    font-family: "Libre Bodoni", serif;
+}
+
+.cat-bio {
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+.cat-bio img, .cat-milestone img{
+    border: 2px solid black;
+    padding: 7px;
+    object-fit: cover;
+}
+
+.cat-bio img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+.cat-bio p{
+    text-align: center;
+}
+
+.cat-milestone img{
+    padding: 15px;
+}
+
+.cat-bio h2, .cat-milestone h2{
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.cat-milestone h2{
+    font: italic;
+}
+
+.cat-milestone {
+    position: relative;
+}
+
+.cat-milestone img:first-of-type {
+    position: relative;
+}
+
+.cat-milestone .date-label {
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+    transform: translateX(-50%);
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+border: 2px dashed black;
+text-wrap: nowrap;
+}
+
+
+.cat-milestone .cracker-label .date-label  {
+    left: 65%;
+}
+
+@media (max-width: 768px) {
+    .cat-bio img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .cracker {
+        border-top: 1px solid black;
+    }
+
+    .cat-pictures{
+        border-left: 1px solid black;
+    }
+
+    .cat-milestone{
+        border-right: 1px solid black;
+    }
+
+}

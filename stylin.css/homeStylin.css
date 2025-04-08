@@ -2,4 +2,18 @@
     width: 200px;
     height: auto;
     margin: 0.5rem;
+    border: 2px solid black;
+    padding: 7px;
+}
+
+h2{
+    border-bottom: 2px solid black;
+    padding-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+
+    .letter {
+        border-left: 2px solid black; 
+    }
 }
