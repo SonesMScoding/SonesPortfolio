@@ -85,7 +85,7 @@
 /* END polygon stylin */
 /* --------------------------------------- */
 
-.aboutmeimg, .catdrawing{
+.aboutmeimg, .whatsnew-pic {
     border: 2px solid black;
     padding: 7px;
 }
@@ -96,7 +96,7 @@
     height: auto; 
 }
 
-.catdrawing {
+.whatsnew-pic {
     width: 100%;
     max-width: 250px; 
     height: auto; 

@@ -9,6 +9,15 @@
     padding-bottom: 5px;
 }
 
+.project a{
+    text-decoration: underline;
+    color: black;
+}
+
+.project a:hover {
+    color: #930909; /* Bootstrap primary color */
+}
+
 @media (min-width: 768px) {
     .Detroix {
         border-right: 1px solid black;
